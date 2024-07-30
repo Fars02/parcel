@@ -1,0 +1,38 @@
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"  # Map port 80 inside the container to port 80 on your host
+    volumes:
+      - .:/var/www/html
+    networks:
+      - webnet
+    hostname: parcel.localhost  # Set custom hostname
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: parcel
+      MYSQL_USER: parcel_user
+      MYSQL_PASSWORD: userpassword
+    ports:
+      - "3306:3306"  # Expose port 3306 for MySQL
+    networks:
+      - webnet
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8081:80"  # Expose port 8081 for phpMyAdmin
+    environment:
+      PMA_HOST: db
+      PMA_USER: parcel_user
+      PMA_PASSWORD: userpassword
+    networks:
+      - webnet
+    hostname: phpmyadmin.localhost  # Set custom hostname
+
+networks:
+  webnet:
+    driver: bridge
