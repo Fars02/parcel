@@ -111,6 +111,10 @@ input.cpwd {
 				<label class="w3-medium">Username *</label>
 				<input class="w3-input w3-border w3-round" type="text" name="username" required>
 			  </div>
+			  <div class="w3-section" >
+				<label class="w3-medium">Percubaan *</label>
+				<input class="w3-input w3-border w3-round" type="text" name="username" required>
+			  </div>
 			  <div class="w3-section">
 				<label class="w3-medium">Password *</label>
 				<input class="w3-input w3-border w3-round cpwd" type="text" name="password" required>

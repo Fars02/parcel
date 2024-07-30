@@ -115,7 +115,12 @@ body, html {
 				<label class="w3-medium">Name *</label>
 				<input class="w3-input w3-border w3-round" type="text" name="name" required>
 			  </div>
-			  
+
+			  <div class="w3-section" >
+				<label class="w3-medium">Cubaan Nama *</label>
+				<input class="w3-input w3-border w3-round" type="text" name="name" required>
+			  </div>
+
 			  <div class="w3-section" >
 				<label class="w3-medium">Student ID *</label>
 				<input class="w3-input w3-border w3-round" type="text" name="student_id" required>
