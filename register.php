@@ -112,7 +112,7 @@ body, html {
 	<form action="" method="post" class="">
 			
 			  <div class="w3-section" >
-				<label class="w3-medium">Name *</label>
+				<label class="w3-medium">On Nu Tuan *</label>
 				<input class="w3-input w3-border w3-round" type="text" name="name" required>
 			  </div>
 			  
