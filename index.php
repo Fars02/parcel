@@ -87,7 +87,7 @@ input.cpwd {
 		
 		</div>
 		<div class="w3-center w3-xlarge">
-		UMP Parcel Management
+		Suka-suki Parcel Management
 		</div>
 	
 		<div class="w3-padding-24"></div>
