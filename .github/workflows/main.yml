@@ -1,0 +1,21 @@
+ 
+name: CI/CD Pipeline
+
+on: 
+  push:
+    branches:
+      - main  # Runs the workflow when pushing to 'main' branch
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest  # Uses an Ubuntu virtual machine
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3  # Pulls code from the repo
+
+      - name: Install dependencies
+        run: echo "No dependencies needed for HTML app"  
+
+      - name: Run simple test
+        run: echo "Testing PHP file exists" && ls index.php
