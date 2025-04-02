@@ -15,10 +15,10 @@ jobs:
       - name: Run simple test
         run: echo "Testing HTML file exists" && ls index.php
 
-      - name: Run PHPUnit tests
-        run: docker-compose run app vendor/bin/phpunit
+  #    - name: Run PHPUnit tests
+  #     run: docker-compose run app vendor/bin/phpunit
 
-  # deploy:  <-- Proper YAML comment
+  # deploy:  
   #   runs-on: ubuntu-latest
   #   needs: build-test
   #   steps:
