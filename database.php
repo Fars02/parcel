@@ -3,10 +3,10 @@
 date_default_timezone_set('Asia/Kuala_Lumpur');
 
 // Database connection parameters
-$servername = "db";  // MySQL service name from docker-compose.yml
-$username = "parcel_user";
-$password = "userpassword";
-$dbname = "parcel";
+$servername = "localhost";  // MySQL service name from docker-compose.yml
+$username = "hamizan";
+$password = "zans9102";
+$dbname = "ParcelDB";
 
 // Create connection
 $con = new mysqli($servername, $username, $password, $dbname);
