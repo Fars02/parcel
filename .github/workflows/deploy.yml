@@ -31,9 +31,9 @@ jobs:
     - name: Set correct permissions
       run: |
         ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} \
-          "sudo chown -R deployer:www-data /var/www/html/myapp && sudo chmod -R 775 /var/www/html/myapp"
+         "chown -R deployer:www-data /var/www/html/myapp && chmod -R 775 /var/www/html/myapp"
 
     - name: Restart Apache
       run: |
         ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} \
-          "sudo systemctl restart apache2"
+          "systemctl restart apache2"
